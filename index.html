@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- !Icon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!--!CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!--!Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--!Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" type="text/css">
+    <!--!Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!--!Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-body">
+    <header>
+        <nav class="bg-yellow-50">
+            <div class="nav-container mb-5 flex justify-between items-center px-4 md:w-4/5 lg:w-3/4 mx-auto py-4">
+                <div><button class="btn bg-primary hover:bg-lime-400 hover:border-none border-none">Blog</button></div>
+                <div class="flex justify-center items-center gap-3">
+                    <img src="./assets/logo.png" alt="logo" class="w-9">
+                    <p class="text-xl md:text-2xl font-medium">Donate Bangladesh</p>
+                </div>
+                <div>
+                    <div class="amount-container flex items-center justify-center gap-1 bg-yellow-200 py-1 px-2 rounded-md cursor-not-allowed">
+                        <img src="./assets/coin.png" alt="coin" class="w-5">
+                        <p id="total-amount" class="font-medium">0000</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="button-container flex items-center justify-center gap-6">
+            <button class="btn md:text-lg bg-primary border-none hover:border-none hover:bg-lime-400 duration-150">Donation</button>
+            <button class="btn md:text-lg bg-white border-2 text-gray-400 hover:bg-primary hover:text-black hover:border-primary transition-colors duration-200">History</button>
+        </div>
+    </header>
+    <!-- !Javascript -->
+    <script src="./main.js"></script>
+    <!-- !Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily:{
+                    'body' : ["Lexend", "system-ui"],
+                },
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)'
+                    }
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>
