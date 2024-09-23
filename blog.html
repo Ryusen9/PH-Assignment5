@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>Donate Bangladesh</title>
+    <!--!CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!--!Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--!Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" type="text/css">
+    <!--!Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!--!Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-body">
+    <div class="blog-container py-10 px-5">
+        <p class="text-4xl font-semibold mb-5">FAQ section <i class="fa-regular fa-seal-question fa-bounce"></i></p>
+        <div class="flex flex-col gap-3">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2"/>
+                <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                <p>DOM (Document Object Module) is a <span class="font-semibold">Javascript</span> method that allows to manipulate the inner html components and control it accordingly. We can access each element by targeting their Id, class, tag. We can almost control everything with DOM, From styling to add functionality to each element. DOM controls every element activity and does what is being scripted for individual element. DOM can add and remove attributes, class, id etc. If webpage is a body DOM is the 🧠 (Brain = Neurone). DOM: 💀</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                <p>We can select element by few methods:</p> <br>
+                <p>2. <span class="font-semibold">getElementsByClassName(className)</span> Selects all elements with a specific class.</p>
+                <p>3. <span class="font-semibold">getElementsByTagName(tagName)</span> Selects all elements with a specific tag name.</p>
+                <p>4. <span class="font-semibold">querySelector(selector)</span> Selects the first element that matches a CSS selector.</p>
+                <p>5. <span class="font-semibold">querySelectorAll(selector)</span> Selects one element by its unique id. It returns a Nodelist and we can access each nodes of the elements and manipulate it accordingly. It's a method that can be used with mass same element.</p> <br>
+                <p><span class="font-semibold">Overview:</span> The smartest way to use a selector is by selecting by <span class="font-medium">Id</span>. It is the smartest approach. Cause Id is unique to every element.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                <p><span class="font-semibold">Definition:</span> Event delegation is a technique in the DOM where a single event listener is added to a parent element to handle events on its child elements, even if those child elements are added dynamically. Instead of attaching an event listener to every individual child element, you attach it to the parent and take advantage of event bubbling to catch events from child elements.</p> <br>
+                <p>There are many Event Delegation, such as click, mouseover, keyup, keydown. Each has different functionality and is used wide variant. We can declare a function and use event delegation to each element to do a certain work event and bring up change to certain part within DOM.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                <p>By using <span class="font-semibold">getAttribute()</span> and <span class="font-semibold">setAttribute()</span> we can target and style or change any attribute of any specific element.</p> <br>
+                <p>1. <span class="font-semibold">getAttribute():</span> By using this method we can target an attribute of an element to make changes later.</p>
+                <p>2. <span class="font-semibold">setAttribute():</span> By using this method we can style and make changes to the attribute that we targeted by using <span class="font-medium">getAttribute().</span></p> <br>
+                <p><span class="font-semibold">Conclusion:</span> To manipulate an element's attributes and styles in the DOM, you can use methods like getAttribute(), setAttribute(), or access properties directly. For styles, use the style property to apply inline CSS or modify classes with classList methods like add(), remove(), or toggle(). This gives you full control over how elements look and behave on a web page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- !Tailwind Configuration -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily:{
+                        'body' : ["Lexend", "system-ui"],
+                    },
+                    extend: {
+                        colors: {
+                            primary: 'rgb(180, 244, 97)'
+                        }
+                    }
+                    
+                }
+            }
+        </script>
+</body>
+</html>

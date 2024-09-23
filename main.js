@@ -13,18 +13,27 @@ let donationBtn = Id('donation-btn');
 let historyBtn = Id('history-btn');
 let donationSection = Id('Donation-section');
 let historySection = Id('History-section');
+let blogBtn = Id('blog-btn');
+blogBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.href = 'blog.html'
+})
 
 donationBtn.addEventListener('click', function(event) {
     event.preventDefault();
     donationSection.classList.remove('hidden');
     historySection.classList.add('hidden');
+    donationBtn.classList.add('focus:bg-primary');
 })
 
 historyBtn.addEventListener('click', function(event) {
     event.preventDefault();
     donationSection.classList.add('hidden');
     historySection.classList.remove('hidden');
+    historyBtn.classList.add('focus:bg-primary', 'focus:text-black');
+    donationBtn.classList.add('bg-white', 'border-2');
 })
+
 // !Submit button 1
 submitBtn1.addEventListener('click', function(event){
     event.preventDefault();
@@ -54,7 +63,7 @@ submitBtn1.addEventListener('click', function(event){
     let historyList = Id('history-container');
     let history = document.createElement('div');
     history.innerHTML = `<div class="history border-2 w-[90%] mx-auto py-3 px-3 flex flex-col gap-3    rounded-lg shadow-lg">
-        <p>${inputAmount.value} is donated for Donate for Flood at Noakhali, Bangladesh</p>
+        <p>${inputAmount.value} taka is donated for Donate for Flood at Noakhali, Bangladesh</p>
         <div class="bg-gray-200 py-2 px-3 rounded-lg">
             <p>Date : ${today}</p>
         </div>
@@ -90,7 +99,7 @@ submitBtn2.addEventListener('click', function(event){
     let historyList = Id('history-container');
     let history = document.createElement('div');
     history.innerHTML = `<div class="history border-2 w-[90%] mx-auto py-3 px-3 flex flex-col gap-3    rounded-lg shadow-lg">
-        <p>${inputAmount.value} is donated for Donate for Flood Relief in Feni,Bangladesh</p>
+        <p>${inputAmount.value} taka is donated for Donate for Flood Relief in Feni,Bangladesh</p>
         <div class="bg-gray-200 py-2 px-3 rounded-lg">
             <p>Date : ${today}</p>
         </div>
@@ -126,7 +135,7 @@ submitBtn3.addEventListener('click', function(event){
     let historyList = Id('history-container');
     let history = document.createElement('div');
     history.innerHTML = `<div class="history border-2 w-[90%] mx-auto py-3 px-3 flex flex-col gap-3    rounded-lg shadow-lg">
-        <p>${inputAmount.value} is donated for Aid for Injured in the Quota Movement</p>
+        <p>${inputAmount.value} taka is donated for Aid for Injured in the Quota Movement</p>
         <div class="bg-gray-200 py-2 px-3 rounded-lg">
             <p>Date : ${today}</p>
         </div>
